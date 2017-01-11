@@ -88,7 +88,7 @@ public class OrderCalculationMain {
 				orderTotal = ordcal.calculateOrderTotal(items, promoCode);
 			else
 				System.out
-						.println("Invalid Promo Code. Please enter the Promocode again");
+						.println("Invalid Promo Code");
 			if (promoCode != 10002) {
 				System.out
 						.println("Do you want to continue.Press 'Y' or 'N'. If 'Y', Please enter the promo code");
