@@ -6,14 +6,15 @@ import org.junit.Test;
 
 public class OrderCalculationMainTest {
 	
-	String items[]={"Apples 2"};
-	int promoCode=10000;
+	String items[]={"apples 3"};
+	int promoCode=10001;
 	OrderCalculationMain ordcal = new OrderCalculationMain();
 
 	@Test
 	public void test() {
 		int result=(int)ordcal.calculateOrderTotal(items, promoCode);
-		assertEquals(result,400);
+		assertEquals(result,300);
 	}
+
 
 }

@@ -1,8 +1,11 @@
 package org.project.ordertotalcalculation.service;
 
 import java.util.HashMap;
-
 import org.project.ordertotalcalculation.model.Item;
+
+/*
+ * This class applies appropriate discounts for the given items
+ */
 
 public class PromotionLevelCalculation implements
 		PromotionLevelCalculationInterface {

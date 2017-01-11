@@ -4,12 +4,20 @@ import java.util.HashMap;
 
 import org.project.ordertotalcalculation.model.Item;
 
+/*
+ * This class calculates the order total with discounts
+ */
+
 public class OrderTotalCalculation {
 
 	Item item = new Item();
 	HashMap<String, Double> itemPrices = new HashMap<String, Double>();
 	PromotionLevelCalculation promocal = new PromotionLevelCalculation();
 	HashMap<String, Double> itemTotal = new HashMap<String, Double>();
+
+	/*
+	 * Calls appropriate promotion methods
+	 */
 
 	public HashMap<String, Double> calculateOrderItemsTotal(String items[],
 			int promoCode) {

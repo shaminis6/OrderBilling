@@ -3,12 +3,18 @@ package org.project.ordertotalcalculation.service;
 import java.util.HashMap;
 import java.util.Scanner;
 
+/*
+ * This main method gets user inputs and performs Promo code validation and displays the final Order total
+ */
 public class OrderCalculationMain {
 
 	private boolean itemDiscountX = false;
 	private boolean itemDiscountY = false;
 	private boolean orderDiscount = false;
 
+	/*
+	 * Order Total Calculation Method
+	 */
 	public double calculateOrderTotal(String items[], int promoCode) {
 		double orderTotal = 0.0;
 		OrderTotalCalculation ordtotcal = new OrderTotalCalculation();
@@ -29,6 +35,10 @@ public class OrderCalculationMain {
 		return orderTotal;
 	}
 
+	/*
+	 * Promo Code validation
+	 */
+
 	public boolean promoCodeValidation(int promoCode) {
 		if (promoCode == 10000 && itemDiscountX == false) {
 			itemDiscountX = true;
@@ -45,6 +55,10 @@ public class OrderCalculationMain {
 			return false;
 
 	}
+
+	/*
+	 * Main method
+	 */
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
